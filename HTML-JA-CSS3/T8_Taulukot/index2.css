@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(231, 226, 226);
+}
+
+td {
+  height: 50px;
+  vertical-align: top;
+}
+

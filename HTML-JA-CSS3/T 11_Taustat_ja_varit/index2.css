@@ -1,0 +1,17 @@
+table.colors th, table.colors td{
+    border: 1px #ccc solid;
+    border-collapse: collapse;
+    padding: 5px;
+    font-weight: 400;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+}
+
+

@@ -1,0 +1,21 @@
+h1 {
+    border: 1px solid black;
+    margin-top: 45px;
+width: 60%;
+
+}
+
+p {
+    border: 1px solid black;
+   
+    margin-left: 80px;
+    width: 700px;
+    float: left;
+}
+ul.a {
+    border: 1px solid black;
+    margin: 25px 25px 25px 25px;
+    list-style-type: circle;
+    width: 700px;
+    float: inline-start;
+  }

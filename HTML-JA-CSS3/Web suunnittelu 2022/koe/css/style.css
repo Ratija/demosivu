@@ -1,0 +1,327 @@
+/**************************/
+/* Sivuston perusasetukset*/   
+/**************************/
+html, body{
+	height: 100%;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+	font-family: 'Roboto';
+	font-size: 12pt;
+}
+h1, h2, h3{
+	margin: 0;
+	padding: 0;
+	color: #404040;
+    text-align: center;
+}
+p, ol, ul{
+	margin-top: 0;
+    text-align: center;
+}
+p {
+	line-height: 180%;
+}
+ol, ul{
+	padding: 0;
+	list-style: none;
+}
+.container{
+    margin: 0px auto;
+    width: 1400px;
+}
+/* Asetetaan containerin leveys 1400px ja keskitetään kaikki tekstit keskelle */ 
+
+/**************************/
+/* Headerin tyylimuotoilut*/   
+/**************************/
+header{
+    overflow: hidden;
+}
+#top-header {
+    height: 60px;
+    text-align: center;
+}
+/**************************/
+/* Logon tyylimuotoilut*/   
+/**************************/
+#logo{
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 30%;
+}
+#logo img {
+    width: 28%;
+    float: left;
+    padding: 10px 0px;
+}
+/*******************************************/
+/* Navigaatio menun (palkin) tyylimuotoilut*/   
+/*******************************************/
+.nav {
+    background-color: rgb(185, 64, 8); 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  .nav li {
+    display: inline-block;
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
+  }
+/*******************************************/
+/* Headerin Kuva menun tyylimuotoilut*/   
+/*******************************************/
+#header-image-menu {
+    margin-top: 10px;
+    position: static;
+}
+#header-image-menu img {
+    width: 91%;
+    height: auto;
+    margin: none;
+    padding: none;
+}
+#image-text {
+    position:absolute;
+    margin-left: 35%;
+    margin-top: -2%;
+    font-family: Roboto;
+    color: black;
+    transform: translate(-30%, -30%);
+    text-align: center;
+}
+/*******************************************/
+/*  Pääsisältö(main) osion1 tyylimuotoilut*/   
+/*******************************************/
+#welcome {
+    overflow: hidden;
+    margin: 0px auto;
+    width: 1000px;
+}
+#welcome .title {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+#welcome p {
+    margin-bottom: 40;
+    text-align: center;
+}
+
+/*******************************************/
+/*  Pääsisältö(main) osion2 tyylimuotoilut*/   
+/*******************************************/
+
+.column-title {
+   
+    float: left;
+    width: 25%;
+    
+  }
+  
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#section-2 {
+    overflow: hidden;
+  margin-top: 5em;
+  padding-top: 1em;
+  padding-bottom: 5em;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  text-align: center;
+}
+.column-title h2 {
+    margin: 1em 0em;
+    font-size: 1,6em;
+    font-weight: 700;
+}
+.button {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    background-color: #f44336;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: white; 
+  color: green;
+}
+
+
+
+
+/*******************************************/
+/*  Pääsisältö(main) osion3 tyylimuotoilut*/   
+/*******************************************/
+
+#section-3 {
+    overflow: hidden;
+    padding-top: 5em;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.image {
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+   
+}
+.image img {
+    display: block;
+    width: 100%;
+}
+.image-full {
+    display: block;
+    width: 80%;
+    margin: 0 10em 3em 1em;
+}
+.img-title {
+    float: left;
+    width: 20%;
+    display: block;
+    padding-bottom: 1em;
+    font-size: 1em;
+    color: rgba(0,0,0,0.6);
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+#column21 
+#column22 
+#column23 
+#column24 {
+    width: 282px;
+    text-align: center;
+    float: left;
+    margin: auto 25px;
+    border-spacing: 15px 0px;
+}
+
+/*******************************************/
+/*  Footerin tyylimuotoilut                */   
+/*******************************************/
+
+
+
+/*  Riverian tyylitietojen lisääminen (yrityksen tiedot)*/ 
+.company-details {
+    overflow: hidden;
+    padding: 3em 0em;
+    background: #E3F0F7;
+    text-align: center;
+    margin-top: 5em;
+}
+#footer #col1,
+#footer #col2,
+#footer #col3 {
+    float: left;
+    width: 320px;
+    padding: 0px 40px 0px 40px;
+}
+#footer #icon {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+/*  Copyright tyylitietojen lisääminen, (DIV) */ 
+.copyright {
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 20px solid rgba(255,255,255,0.08);
+    text-align: center;
+    background: red;
+}
+.copyright p {
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: rgba(255,255,255,0.6);
+}
+.copyright a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+
+/*  Sosiaalisen median ikoneiden tyylitietojen lisääminen*/ 
+
+ul.contact {
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+}
+ul.contact li {
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 1em;
+}
+ul.contact li a {
+    color: #FFF;
+    display: inline-block;
+    background: #4C9389;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
