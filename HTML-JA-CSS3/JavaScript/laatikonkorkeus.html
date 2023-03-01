@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p2 {
+            color: red;
+            font-size: larger;
+            margin-left: 10%;
+        }
+    </style>
+
+    <script>
+        // Laskutoimitus-funktio
+        function Laskekorkeus() {
+         /*   let tilavuus = prompt("Anna laatikon tilavuus");
+            if (tilavuus != null) {
+                sessionStorage.setItem("key_name", prompt_value);
+                let value = sessionStorage.getItem("key_name");
+                document.getElementById("tilavuus").innerHTML = value;
+            }
+
+            let ppa = prompt("Anna laatikon pohjapinta-ala");
+            if (ppa != null) {
+                sessionStorage.setItem("key_name2", prompt_value);
+                let value = sessionStorage.getItem("key_name2");
+                document.getElementById("ppa").innerHTML = value;
+            }
+            */
+
+            let korkeus = 0;
+
+            let tilavuus = document.getElementById('tilavuus').value;
+             let ppa = document.getElementById('ppa').value;
+
+            // Virheiden tarkistukset
+            try {
+                if (tilavuus.trim() == "") throw "tyhjä kenttä";
+                if (ppa.trim() == "") throw "tyhjä kenttä";
+                if (isNaN(tilavuus)) throw "Anna vain numeroita tilavuus-kenttään.";
+                if (isNaN(ppa)) throw "Anna vain numeroita pinta-ala -kenttään.";
+                if (tilavuus <= 0) throw "Liian pieni arvo tilavuus-kentässä.";
+                if (ppa <= 0) throw "Liian pieni arvo pinta-ala -kentässä.";
+            }
+            catch (err) {
+                document.getElementById("Virhe").innerHTML = "" + err;
+                return;
+            }
+
+            // Laskee korkeuden
+            korkeus = tilavuus / ppa;
+            // Pyöristys kahden desimaalin tarkkuuteen
+            document.getElementById('korkeus').value = `Tulos on ${korkeus.toFixed(2)} metriä`;
+            // Tyhjentää virhekentän
+            txt = "";
+            document.getElementById("Virhe").innerHTML = txt;
+        }
+
+        // Tyhjentää arvo-kentät
+        function tyhjenna() {
+            document.getElementById('tilavuus').value = "";
+            document.getElementById('ppa').value = "";
+            document.getElementById('korkeus').value = "";
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Laatikon korkeuden laskeminen yhtälöllä h = V / A, jossa V laatikon tilavuus ja A laatikon pohjan pinta-ala</h1>
+    <p>Tilavuus (m³):</p>
+    <input type="text" id="tilavuus">
+    <p2 id="Virhe"></p2>
+    <p>Pohjan pinta-ala (m²):</p>
+    <input type="text" id="ppa"> <br>
+    <br>
+    <input type="button" id="Laske" value="Laske laatikon korkeus" onclick="Laskekorkeus()"><br>
+    <p>Laatikon korkeus (m):</p>
+    <input type="text" id="korkeus" name="korkeus"><br>
+    <br>
+    <input type="button" id="tyhjenna" value="Reset" onclick="tyhjenna()"><br>
+
+
+
+
+</body>
+
+</html>
